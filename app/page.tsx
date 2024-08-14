@@ -1,17 +1,12 @@
 import Image from "next/image";
 import getStripe from '@/utils/get-stripe';
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Head from "next/head";
 import { AppBar, Typography, Container, Toolbar, Button, Box, Grid } from "@mui/material";
 import "@/app/globals.css"; // Ensure this path is correct
 
 export default function Home() {
   return (
     <Container maxWidth="lg">
-      <Head>
-        <title>Learn in a Flash</title>
-        <meta name="description" content="Create Flash from your text" />
-      </Head>
 
       <AppBar position="static">
         <Toolbar>

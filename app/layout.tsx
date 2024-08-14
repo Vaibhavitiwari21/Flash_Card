@@ -18,6 +18,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
         <html lang="en">
+          <head>
+          <title>Learn in a Flash</title>
+          <meta name="description" content="Create Flash from your text" />
+          </head>
           <body className={inter.className}>{children}</body>
         </html>
     </ClerkProvider>
