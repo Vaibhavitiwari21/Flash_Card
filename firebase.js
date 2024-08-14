@@ -10,18 +10,18 @@ import { getFireBase } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBuDr4_h2vRoCqTAtvzed2nvSYNCrk6sGY",
-  authDomain: "flash-card-game-7a6fb.firebaseapp.com",
-  projectId: "flash-card-game-7a6fb",
-  storageBucket: "flash-card-game-7a6fb.appspot.com",
-  messagingSenderId: "859805938396",
-  appId: "1:859805938396:web:73b500cb28fe4c802bfa19",
-  measurementId: "G-LM8XERX705"
+	apiKey: "AIzaSyDyubRS1ew06uxPI07PmYiVwZyXLCo0Qeo",
+	authDomain: "math-genie-f3f08.firebaseapp.com",
+	projectId: "math-genie-f3f08",
+	storageBucket: "math-genie-f3f08.appspot.com",
+	messagingSenderId: "772031687503",
+	appId: "1:772031687503:web:ad4bfec1553b7ca87df33a",
+	measurementId: "G-YRXHLNXHD9",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFireBase(app)
+const db = getFireBase(app);
 
-export{db}
+export { db };
