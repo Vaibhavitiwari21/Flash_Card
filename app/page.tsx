@@ -1,36 +1,14 @@
 import Image from "next/image";
 import getStripe from '@/utils/get-stripe';
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Head from "next/head";
 import { AppBar, Typography, Container, Toolbar, Button, Box, Grid } from "@mui/material";
 import "@/app/globals.css"; // Ensure this path is correct
+import { NavBar } from "@/components/NavBar";
 
 export default function Home() {
   return (
-    <Container maxWidth="lg">
-      <Head>
-        <title>Learn in a Flash</title>
-        <meta name="description" content="Create Flash from your text" />
-      </Head>
-
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Learn in a Flash
-          </Typography>
-          <SignedOut>
-            <SignInButton>
-              <Button color="inherit">Login</Button>
-            </SignInButton>
-            <Button color="inherit" component="a" href="/sign-up">
-              Sign Up
-            </Button>
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </Toolbar>
-      </AppBar>
+    <>
+      <NavBar />
 
       <Box className="container-content">
         <Typography variant="h2">Welcome to Learn in a Flash</Typography>
@@ -194,6 +172,6 @@ export default function Home() {
   </Grid>
 </Box>
 
-    </Container>
+</>
   );
 }
